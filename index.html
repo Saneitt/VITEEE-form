@@ -1,1 +1,81 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITEEE</title>
+    <link rel="stylesheet" href="stylesform.css">
+</head>
+<body>
+    <h1 class="title">VITEEE Student Registration</h1>
+    <form id="student-registration">
+        <fieldset>
+            <legend class="heading">Personal Information</legend>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" required><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br>
+            <label for="pincode">Pincode:</label>
+            <input type="number" id="pincode" name="pincode" required><br>
+        </fieldset>
+        <fieldset>
+            <legend class="heading">Academic Information</legend>
+            <label for="boardName">Name of Board:</label>
+            <input type="text" id="boardName" name="boardName" required><br>
+            <label for="collegeName">Name of College:</label>
+            <input type="text" id="collegeName" name="collegeName" required><br>
+            <label for="hscRollNo">HSC Roll No:</label>
+            <input type="number" id="hscRollNo" name="hscRollNo" required><br>
+            <label for="hscPercentage">HSC Percentage:</label>
+            <input type="number" id="hscPercentage" name="hscPercentage" min="0" max="100" step="0.01" required><br>
+        </fieldset>
+        <fieldset>
+            <legend class="heading">Course Information</legend>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select</option>
+                <option value="computerScience">Computer Science</option>
+                <option value="eee">Electrical and Electronics Engineering</option>
+                <option value="ece">Electronics and Communication Engineering</option>
+                <option value="mechanical">Mechanical Engineering</option>
+            </select><br>
+            <label for="campus">Preferred Campus:</label>
+            <select id="campus" name="campus" required>
+                <option value="">Select</option>
+                <option value="vellore">Vellore</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="amaravati">Amaravati</option>
+                <option value="chennai">Chennai</option>
+            </select><br>
+            <label for="testCity">Test City Preference:</label>
+            <select id="testCity" name="testCity" required>
+                <option value="">Select</option>
+                <option value="vellore">Vellore</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="amaravati">Amaravati</option>
+                <option value="chennai">Chennai</option>
+            </select><br>
+        </fieldset>
+        <input class="submit-btn" type="submit" value="Submit">
+    </form>
+</body>
+</html>
